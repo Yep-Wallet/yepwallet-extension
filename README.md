@@ -14,13 +14,11 @@ For [general questions](https://github.com/Yep-Wallet/yepwallet-extension/discus
 
 YepWallet supports Google Chrome, and Chromium-based browsers. We recommend using the latest available browser version.
 
-For up to the minute news, follow our [Telegram](https://t.me/yepwallet)
-
 To learn how to develop YepWallet-compatible applications, visit our [Developer Docs](https://yepwallet.xyz/docs/introduction).
 
 ## Building locally
 
-- Install [Node.js](https://nodejs.org) version 16
+- Install [Node.js](https://nodejs.org) version 18
 - Install dependencies: `npm install`
 - Build `npm run build`
 
