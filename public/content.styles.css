@@ -1,0 +1,514 @@
+.lfgReplace {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+
+
+.lfgReplaceMainHeader {
+    width: 100%;
+}
+
+.lfgReplaceMainHeader img {
+    width: 100%;
+}
+
+.lfgReplaceTheme0 {
+    background: #161616;
+    border-radius: 17px;
+    padding: 20px;
+
+}
+
+.lfgReplaceTheme0 .lfgReplaceMain {
+    margin-top: 11px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-bottom: 6px;
+    font-size: 12px;
+}
+
+.lfgReplaceTheme0 .lfgReplaceMainInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lfgReplaceTheme0 .lfgReplaceMainInfoTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+
+.lfgReplaceTheme0 .lfgReplaceMainInfoP {
+    margin-top: 6px;
+    text-align: left;
+    color: #fff;
+}
+
+.lfgReplaceTheme0 .lfgReplaceMainInput {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 14px;
+    gap: 10px;
+}
+
+.lfgReplaceTheme0 .lfgReplaceMainInputTag {
+    margin-top: 10px !important;
+}
+
+.lfgReplaceTheme0 .lfgReplaceMainInputInput {
+    flex: 1;
+}
+
+.lfgReplaceTheme0 .lfgReplaceMainInputBtn {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D9F565;
+    border: 0px !important;
+}
+
+.lfgReplaceTheme0 .withoutParamsArray {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.lfgReplaceTheme0 .withoutParamsArrayItem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D9F565 !important;
+    border: 0px !important;
+}
+
+
+.lfgReplaceTheme1 {
+    background: #fff;
+    border-radius: 15px;
+    color: #000;
+    padding-bottom: 44px;
+    /* border: 1px solid #000; */
+    height: 710px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.lfgReplaceTheme1 .lfgReplaceMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    padding: 0 9.5px;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.lfgReplaceTheme1 .lfgReplaceMainInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lfgReplaceTheme1 .lfgReplaceMainInfoTitle {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+.lfgReplaceTheme1 .lfgReplaceMainInfoP {
+    width: 350px;
+    flex: 1;
+    margin-top: 29px;
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-family: inherit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 133.333% */
+    text-transform: capitalize;
+}
+
+.lfgReplaceTheme1 .lfgReplaceMainInput {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 14px;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.lfgReplaceTheme1 .lfgReplaceMainInputTag {
+    margin-top: 10px !important;
+}
+
+.lfgReplaceTheme1 .lfgReplaceMainInputInput {
+    flex: 1;
+    /* border-radius: 10px 0 0 10px; */
+
+}
+
+/* .lfgReplaceTheme1 .lfgReplaceMainInputSelect .ant-select-selector {
+    border-radius: 0 10px 10px 0 !important;
+} */
+
+.lfgReplaceTheme1 .lfgReplaceMainInputBtn {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #050505 !important;
+    border: 0px !important;
+    color: #fff;
+
+}
+
+.lfgReplaceTheme1 .withoutParamsArray {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+
+}
+
+.lfgReplaceTheme1 .withoutParamsArrayItem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D9F565 !important;
+    border: 0px !important;
+    font-size: 20px;
+
+}
+
+
+
+.lfgReplaceTheme2 {
+    background: #fff;
+    border-radius: 15px;
+    color: #000;
+    padding-bottom: 44px;
+    /* border: 1px solid #000; */
+    height: 710px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.lfgReplaceTheme2 .lfgReplaceMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    padding: 0 9.5px;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.lfgReplaceTheme2 .lfgReplaceMainInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.lfgReplaceTheme2 .lfgReplaceMainInfoTitle {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+.lfgReplaceTheme2 .lfgReplaceMainInfoP {
+    width: 350px;
+    flex: 1;
+    margin-top: 27px;
+    text-align: center;
+    color: #000;
+    text-align: center;
+    font-family: inherit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 133.333% */
+    text-transform: capitalize;
+}
+
+.lfgReplaceTheme2 .lfgReplaceMainInput {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 14px;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.lfgReplaceTheme2 .lfgReplaceMainInputTag {
+    margin-top: 10px !important;
+}
+
+.lfgReplaceTheme2 .lfgReplaceMainInputInput {
+    flex: 1;
+    /* border-radius: 10px 0 0 10px; */
+
+}
+
+/* .lfgReplaceTheme2 .lfgReplaceMainInputSelect .ant-select-selector {
+    border-radius: 0 10px 10px 0 !important;
+} */
+
+.lfgReplaceTheme2 .lfgReplaceMainInputBtn {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #050505 !important;
+    border: 0px !important;
+    color: #fff;
+
+}
+
+.lfgReplaceTheme2 .withoutParamsArray {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+
+}
+
+.lfgReplaceTheme2 .withoutParamsArrayItem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D9F565 !important;
+    border: 0px !important;
+    font-size: 20px;
+
+}
+
+.modalTransparent .ant-modal-content {
+    background-color: transparent !important;
+    box-shadow: none !important;
+
+}
+
+.navModalContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navModalContentCon {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.navModalContentItem {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    height: 77px;
+    padding: 16px 0;
+    border: 1px solid rgba(0, 9, 3, .08);
+    border-radius: 16px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.navModalContentItemDisabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+
+}
+
+.navModalContentTitle {
+    color: #fff;
+    line-height: 38px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.navModalContentItemImg {
+    border-radius: 10px;
+}
+
+.createFrom {
+    padding: 40px 24px 25px;
+    background: #1b1d28;
+    border-radius: 15px;
+    color: #fff;
+    /* border: 1px solid #000; */
+    height: auto;
+    overflow: hidden;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.createFromTitle {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+
+}
+
+.createFromBtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0d6efd !important;
+    border: 0px !important;
+    color: #fff !important;
+}
+
+.createFromInputSuffix {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.createFromInputSuffixSpan {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.createFromInputSuffixImg {
+    width: 30px;
+    height: 30px;
+}
+
+.createFromTitleIcon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.createFrom .ant-input-outlined {
+    background: #2a2a3b !important;
+    color: #fff !important;
+}
+
+
+.createFrom .ant-select-selector {
+    background: #2a2a3b !important;
+    color: #fff !important;
+}
+
+.createFrom .ant-picker-outlined {
+    background: #2a2a3b !important;
+    color: #fff !important;
+}
+
+.createFrom input::placeholder {
+    color: #ffffff8d !important;
+
+}
+
+.createFrom .ant-radio-wrapper {
+    color: #fff !important;
+
+}
+
+.createFrom .ant-picker-suffix {
+    color: #fff !important;
+
+}
+
+.createFrom .ant-picker-clear {
+    color: #fff !important;
+
+}
+
+
+.createFromUploadSpan {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ant-input::placeholder {
+    color: #ffffff8d !important;
+
+}
+
+.createFromTitleSpan {
+    color: #fff;
+
+}
+
+.createFromUpload {
+    width: 470px !important;
+    height: 40px;
+    border-radius: 8px;
+    align-items: center;
+    padding: 7px 11px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d9d9d9;
+    display: flex;
+    flex-direction: row;
+    background: #2a2a3b !important;
+    color: #fff !important;
+    gap: 5px;
+    box-sizing: border-box;
+}
+
+.createFromLabel {
+    font-size: 16px;
+    color: #fff;
+}
