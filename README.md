@@ -1,7 +1,7 @@
 # YepWallet Browser Extension
 
 [![Based on TON](https://img.shields.io/badge/Based%20on-TON-blue)](https://ton.org/)
-[![Telegram Channel](https://badgen.net/badge/follow/@YepWallet/blue?icon=telegram)](https://t.me/yepwallet)
+[![Telegram Channel](https://badgen.net/badge/follow/@YepWallet/blue?icon=telegram)](https://t.me/YepWalletANN)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
 
 YepWallet Browser Extension is a non-custodial crypto wallet and gateway to blockchain dApps.
@@ -14,11 +14,13 @@ For [general questions](https://github.com/Yep-Wallet/yepwallet-extension/discus
 
 YepWallet supports Google Chrome, and Chromium-based browsers. We recommend using the latest available browser version.
 
-To learn how to develop YepWallet-compatible applications, visit our [Developer Docs](https://yepwallet.xyz/docs/introduction).
+For up to the minute news, follow our [Telegram](https://t.me/YepWalletANN)
+
+To learn how to develop YepWallet-compatible applications, visit our [Developer Docs](https://docs.yepwallet.xyz).
 
 ## Building locally
 
-- Install [Node.js](https://nodejs.org) version 18
+- Install [Node.js](https://nodejs.org) version 18+
 - Install dependencies: `npm install`
 - Build `npm run build`
 
