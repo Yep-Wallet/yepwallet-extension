@@ -44,20 +44,21 @@ const ImportMnemonic = () => {
 				24 words separated by a space: thought borrow spend aisle....
 			</CreateText>
 			<MnemonicBlock
-				contentEditable
+				id="MnemonicBlock"
+				contentEditable="plaintext-only"
 				onBlur={(t) => {
-					const element: any = document.querySelector(
-						'span[style="color: rgb(0, 0, 0); font-size: 12px; white-space: pre; background-color: rgb(221, 221, 221);"]'
-					);
+					let dom = document.getElementById("MnemonicBlock");
 
-					let textContent = "";
-					if (element) {
-						textContent = element.textContent || element.innerText;
-					} else {
-						textContent = t.currentTarget.innerHTML;
+					if (dom) {
+						// 获取纯文本内容
+						const textContent =
+							dom.innerText || dom.textContent || "";
+
+						console.log("textContent", dom, textContent);
+
+						// 设置值
+						!isLoading && setValue(textContent);
 					}
-
-					!isLoading && setValue(textContent);
 				}}
 			>
 				{value}
