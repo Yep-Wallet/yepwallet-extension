@@ -104,7 +104,9 @@ const LockScreenSelect = () => {
 	const { mutate } = useSetLockScreen();
 	return (
 		<>
-			<InputWrapper>
+			<InputWrapper
+				style={{ justifyContent: "center", paddingLeft: "10px" }}
+			>
 				<InputWrapperLabel>Lock Screen</InputWrapperLabel>
 				<Checkbox
 					checked={isLockScreen}
@@ -123,7 +125,9 @@ const DataCollectionSelect = () => {
 
 	return (
 		<>
-			<InputWrapper>
+			<InputWrapper
+				style={{ justifyContent: "center", paddingLeft: "10px" }}
+			>
 				<InputWrapperLabel>Analytics</InputWrapperLabel>
 				<Checkbox
 					checked={isEnabled}

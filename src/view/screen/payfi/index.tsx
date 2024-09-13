@@ -7,13 +7,13 @@ import { InputField } from "../../components/InputField";
 import { CreateH1 } from "../import/CreateWallet";
 
 let btns = [
-	{ name: "YELLOW CARD", id: 1, bg: "#FFD93B", color: "#000" },
+	{ name: "Gold CARD", id: 1, bg: "#FFD93B", color: "#000" },
 	{ name: "BLACK CARD", id: 2, bg: "#000", color: "#fff" },
 	{ name: "YEP CARD", id: 3, bg: "#dbe0e3", color: "#000" },
 ];
 
 let cardNames: any = {
-	1: "YELLOW CARD",
+	1: "Gold CARD",
 	2: "BLACK CARD",
 	3: "YEP CARD",
 };
@@ -165,7 +165,7 @@ let values: any = {
 	3: {
 		value1: "2.5%",
 		value2: "0%",
-		value3: "2U",
+		value3: "5U",
 		value4: "0",
 	},
 };
@@ -387,7 +387,8 @@ export default function Payfi() {
 				<div className="PayfiBottomTitle">Card introduction</div>
 				<div className="PayfiBottomContent">
 					<div className="PayfiBottomContentTitle">
-						{cardNames[active]} | USDT | BTC | ETH | TON 
+						{cardNames[active]} | USDT | BTC | ETH | TON | 60
+						cryptocurrencies+
 					</div>
 					<div className="PayfiBottomContentTxt">holder rights</div>
 					<div className="PayfiBottomContentTxt1">
@@ -405,13 +406,30 @@ export default function Payfi() {
 				/>
 				<ButtonPositive
 					className="PayfiBtn"
-					onClick={() => {
+					onClick={async () => {
 						if (!code) {
 							message.error("Please enter the invitation code");
 						} else {
-							ExtensionPlatform.openTab({
-								url: `https://t.me/YepWallet_bot?start=ref_${code}`,
-							});
+							const response = await fetch(
+								`https://api.yep.money/game/yep/checkInviteCode?inviteCode=${code}`,
+								{
+									method: "GET",
+									headers: {
+										"Content-Type": "application/json",
+										// 在这里可以添加其他请求头信息，比如 Authorization 等
+									},
+								}
+							);
+							const responseData = await response.json(); // 如果需要将响应内容解析为 JSON
+
+							console.log("responseData", responseData);
+							if (responseData?.success) {
+								ExtensionPlatform.openTab({
+									url: `https://t.me/YepWallet_bot/appcenter?startapp=ref_${code}`,
+								});
+							} else {
+								message.error(responseData.data);
+							}
 						}
 					}}
 				>

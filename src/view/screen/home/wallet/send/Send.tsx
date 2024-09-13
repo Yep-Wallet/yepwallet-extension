@@ -96,7 +96,7 @@ const InputView: FC<InputProps> = ({ state, balance, onChange, onSend }) => {
 				value={state.amount}
 				onChange={(e) => onChange({ amount: e.target.value, max: "0" })}
 			>
-				<MaxRow>
+				<MaxRow style={{ position: "absolute", right: "10px" }}>
 					<MaxButton
 						onClick={() =>
 							onChange({
