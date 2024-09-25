@@ -1,9 +1,10 @@
 import { message } from "antd";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
 import ExtensionPlatform from "../../../libs/service/extension";
 import { ButtonColumn, ButtonPositive } from "../../components/Components";
 import { InputField } from "../../components/InputField";
+import { WalletStateContext } from "../../context";
 import { CreateH1 } from "../import/CreateWallet";
 
 let btns = [
@@ -334,6 +335,31 @@ const PayfiBtn = styled.div<{ background: string; color: string }>`
 export default function Payfi() {
 	const [active, _active] = useState(1);
 	const [code, setCode] = useState("");
+	const [isApply, _isApply] = useState(false);
+
+	const wallet = useContext(WalletStateContext);
+
+	const checkPublicKey = async () => {
+		const response = await fetch(
+			`https:////api.yep.money/game/yep/checkPublicKey?publicKey=${wallet.publicKey}`,
+			{
+				method: "GET",
+				headers: {
+					"Content-Type": "application/json",
+					// 在这里可以添加其他请求头信息，比如 Authorization 等
+				},
+			}
+		);
+		const responseData = await response.json(); // 如果需要将响应内容解析为 JSON
+
+		_isApply(responseData.data);
+	};
+
+	useEffect(() => {
+		if (wallet.publicKey) {
+			checkPublicKey();
+		}
+	}, [wallet]);
 
 	return (
 		<PayfiWrapper>
@@ -398,44 +424,58 @@ export default function Payfi() {
 					</div>
 				</div>
 			</div>
-			<ButtonColumn style={{ gap: 15 }}>
-				<InputField
-					label={`Invitation code`}
-					value={code}
-					onChange={(e) => setCode(e.target.value)}
-				/>
+			{isApply ? (
+				<ButtonColumn style={{ gap: 15 }}>
+					<InputField
+						label={`Invitation code`}
+						value={code}
+						onChange={(e) => setCode(e.target.value)}
+					/>
+					<ButtonPositive
+						className="PayfiBtn"
+						onClick={async () => {
+							if (!code) {
+								message.error(
+									"Please enter the invitation code"
+								);
+							} else {
+								const response = await fetch(
+									`https://api.yep.money/game/yep/checkInviteCode?inviteCode=${code}`,
+									{
+										method: "GET",
+										headers: {
+											"Content-Type": "application/json",
+											// 在这里可以添加其他请求头信息，比如 Authorization 等
+										},
+									}
+								);
+								const responseData = await response.json(); // 如果需要将响应内容解析为 JSON
+
+								if (responseData?.success) {
+									ExtensionPlatform.openTab({
+										url: `https://t.me/YepWallet_bot/appcenter?startapp=ref_${code}_${wallet.publicKey}`,
+									});
+								} else {
+									message.error(responseData.data);
+								}
+							}
+						}}
+					>
+						apply for waitlist
+					</ButtonPositive>
+				</ButtonColumn>
+			) : (
 				<ButtonPositive
 					className="PayfiBtn"
-					onClick={async () => {
-						if (!code) {
-							message.error("Please enter the invitation code");
-						} else {
-							const response = await fetch(
-								`https://api.yep.money/game/yep/checkInviteCode?inviteCode=${code}`,
-								{
-									method: "GET",
-									headers: {
-										"Content-Type": "application/json",
-										// 在这里可以添加其他请求头信息，比如 Authorization 等
-									},
-								}
-							);
-							const responseData = await response.json(); // 如果需要将响应内容解析为 JSON
-
-							console.log("responseData", responseData);
-							if (responseData?.success) {
-								ExtensionPlatform.openTab({
-									url: `https://t.me/YepWallet_bot/appcenter?startapp=ref_${code}`,
-								});
-							} else {
-								message.error(responseData.data);
-							}
-						}
+					onClick={() => {
+						ExtensionPlatform.openTab({
+							url: `https://t.me/YepWallet_bot/appcenter`,
+						});
 					}}
 				>
-					apply for waitlist
+					You're in. Move up the rankings
 				</ButtonPositive>
-			</ButtonColumn>
+			)}
 		</PayfiWrapper>
 	);
 }
