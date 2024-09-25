@@ -473,7 +473,7 @@ export default function Payfi() {
 						});
 					}}
 				>
-					You're in. Move up the rankings
+					You’re in. Go check the rankings.
 				</ButtonPositive>
 			)}
 		</PayfiWrapper>

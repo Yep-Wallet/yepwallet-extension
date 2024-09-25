@@ -1,6 +1,6 @@
 {
 	"name": "@yepwallet/extension",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"repository": "https://github.com/Yep-Wallet/yepwallet",
 	"dependencies": {
 		"@amplitude/analytics-browser": "^1.9.4",
