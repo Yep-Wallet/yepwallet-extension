@@ -17,7 +17,7 @@ export const getRestrictions = async () => {
 
     if (!data) {
       const response = await fetch(
-        "https://raw.githubusercontent.com/OpenProduct/openmask-extension/main/resources/restrictions.json"
+        "https://yep-wallet.github.io/docs/restrictions.json"
       );
 
       if (response.status !== 200) {

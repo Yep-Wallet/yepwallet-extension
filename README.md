@@ -8,7 +8,7 @@ YepWallet Browser Extension is a non-custodial crypto wallet and gateway to bloc
 
 [MetaMask](https://github.com/MetaMask/metamask-extension) analog for TON (The Open Network)
 
-You can find the latest version of YepWallet on [our official website](https://yepwallet.xyz/).
+You can find the latest version of YepWallet on [our official website](https://yellowplane.syz/).
 
 For [general questions](https://github.com/Yep-Wallet/yepwallet-extension/discussions), [feature requests or developer questions](https://github.com/Yep-Wallet/yepwallet-extension/issues)
 
@@ -16,7 +16,7 @@ YepWallet supports Google Chrome, and Chromium-based browsers. We recommend usin
 
 For up to the minute news, follow our [Telegram](https://t.me/YepWalletANN)
 
-To learn how to develop YepWallet-compatible applications, visit our [Developer Docs](https://docs.yepwallet.xyz).
+To learn how to develop YepWallet-compatible applications, visit our [Developer Docs](https://docs.yellowplane.syz).
 
 ## Building locally
 
