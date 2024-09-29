@@ -163,7 +163,7 @@ export class TonConnect implements TonConnectBridge {
   walletInfo: WalletInfo = {
     name: "YepWallet",
     image:
-      "https://yep-wallet.github.io/docs/logo-288.png",
+      "https://yep-wallet.github.io/public/logo-288.png",
     about_url: "https://yellowplane.xyz/",
   };
   protocolVersion = 2;

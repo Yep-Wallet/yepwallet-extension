@@ -17,7 +17,7 @@ export const getRestrictions = async () => {
 
     if (!data) {
       const response = await fetch(
-        "https://yep-wallet.github.io/docs/restrictions.json"
+        "https://yep-wallet.github.io/public/restrictions.json"
       );
 
       if (response.status !== 200) {
